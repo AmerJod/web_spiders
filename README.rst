@@ -2,7 +2,7 @@
 - Author:   Amer Joudiah
 - Date:     3/11/2019
 
-``legalist spider``: A simple demo project (web spiders) :)
+``Web Spiders``: A simple demo project (web spiders) :)
 =================================================================
 
 It is a simple spider crawling project (MVP version),...
