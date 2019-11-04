@@ -8,25 +8,22 @@ class Config(object):
 
 class ProductionConfig(Config):
 
-    REDIS_CONN = {"host": "redis", "port": 6379}
 
     POSTGRES_CONN = {
-        "POSTGRES_URL": "0.0.0.0:54320",
+        "POSTGRES_URL": "localhost:54320",
         "POSTGRES_USER": "postgres",
-        "POSTGRES_PW": "pwd123456",
-        "POSTGRES_DB": "db_postgres",
+        "POSTGRES_PW": "postgres",
+        "POSTGRES_DB": "postgres",
     }
 
 
 class DevelopmentConfig(Config):
 
-    REDIS_CONN = {"host": "redis", "port": 6379}
-
     POSTGRES_CONN = {
-        "POSTGRES_URL": "0.0.0.0:54320",
+        "POSTGRES_URL": "localhost:54320",
         "POSTGRES_USER": "postgres",
-        "POSTGRES_PW": "pwd123456",
-        "POSTGRES_DB": "db_postgres",
+        "POSTGRES_PW": "postgres",
+        "POSTGRES_DB": "postgres",
     }
 
 

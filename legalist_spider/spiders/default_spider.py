@@ -36,7 +36,7 @@ class DefaultQuotesSpider(Spider):
             next_page = response.css("li.next a::attr(href)").get()
             # Send a request to the next page if exist
             if next_page is not None:
-                print(f"next_page: {next_page}")
+                # print(f"next_page: {next_page}")
                 yield response.follow(next_page, callback=self.parse)
 
 

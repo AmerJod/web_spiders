@@ -131,3 +131,4 @@ dmypy.json
 
 # custom
 legalist_spider/json_files
+/legalist_spider/json_files/
