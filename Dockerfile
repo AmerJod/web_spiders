@@ -4,8 +4,6 @@ WORKDIR /usr/src/spiders
 
 COPY . .
 
-ENV  SPIDERS_EVN="production"
-
 # install the requirements
 RUN pip install -r requirements.txt
 

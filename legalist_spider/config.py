@@ -8,6 +8,8 @@ class Config(object):
 
 class ProductionConfig(Config):
 
+    run_with_scheduler = os.getenv("RUN_WITH_SCHEDULER", True)
+    spider_name = os.getenv("SPIDER_NAME", None)
 
     POSTGRES_CONN = {
         "POSTGRES_URL": "localhost:54320",
@@ -18,6 +20,9 @@ class ProductionConfig(Config):
 
 
 class DevelopmentConfig(Config):
+
+    run_with_scheduler = os.getenv("RUN_WITH_SCHEDULER", True)
+    spider_name = os.getenv("SPIDER_NAME", None)
 
     POSTGRES_CONN = {
         "POSTGRES_URL": "localhost:54320",

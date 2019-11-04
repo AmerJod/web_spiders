@@ -143,4 +143,4 @@ class DatabaseWriterPipeline(object):
         self.conn = Database(**config.POSTGRES_CONN)
 
     def close_spider(self, spider):
-        self.conn.session.close()
+        self.conn._session.close()
