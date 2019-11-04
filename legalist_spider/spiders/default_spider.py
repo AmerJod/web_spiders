@@ -39,7 +39,6 @@ class DefaultQuotesSpider(Spider):
                 # print(f"next_page: {next_page}")
                 yield response.follow(next_page, callback=self.parse)
 
-
     def parse_author(self, response, **cb_kwargs):
         """ parse page """
 

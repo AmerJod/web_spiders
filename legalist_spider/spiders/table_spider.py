@@ -12,7 +12,7 @@ class TableQuotesSpider(Spider):
 
     start_urls = [
         base_url,
-        ]
+    ]
 
     def parse(self, response):
 
