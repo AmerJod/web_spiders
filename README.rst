@@ -27,10 +27,10 @@ Spiders Included:
         -    The javascript spider is used to scrape quote data (author, text, and tags). The quotes are rendered in by the JavaScript into HTML after the initial access to the webpage. This means that if a request to the webpage is sent, the returned HTML data is before the quotes have been loaded into the webpage. However, the quote data is stored within the JavaScript file. Quote data is then scraped from the JavaScript file using regular expressions.
 
 4.  ``Login spider``:
-        -   The login spider is used to scrape quote data (author, text, and tags).....
+        -   The login spider is used to scrape quote data (author, text, and tags).....cd
 
 5.  ``Tableful Spider``:
-        -   The login spider is used to scrape quote data (author, text, and tags). The quotes are stored into html table.
+        -   The login spider is used to scrape quote data (author, text, and tags). The quotes are stored into a html table.
 
 6.  ``Random Spider``:
         - TODO
