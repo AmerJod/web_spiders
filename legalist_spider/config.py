@@ -12,7 +12,7 @@ class ProductionConfig(Config):
     spider_name = os.getenv("SPIDER_NAME", None)
 
     POSTGRES_CONN = {
-        "POSTGRES_URL": "localhost:54320",
+        "POSTGRES_URL": "postgres",
         "POSTGRES_USER": "postgres",
         "POSTGRES_PW": "postgres",
         "POSTGRES_DB": "postgres",

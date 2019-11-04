@@ -55,7 +55,7 @@ class JsonWriterPipeline(object):
     def open_spider(self, spider):
         dt = str(datetime.datetime.now())
         file_name = "quotes_" + dt + ".json"
-        self.file = open(f"json_files/{file_name}", "w")
+        self.file = open(f"{file_name}", "w+")
 
     def close_spider(self, spider):
         self.file.close()
